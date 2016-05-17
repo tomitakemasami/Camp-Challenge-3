@@ -1,0 +1,20 @@
+「Javaクラス」
+
+public class Musician extends Human{　　　　//Humanを継承したMusicianクラスを作成
+public String p(){　　　　　　　　　　　　　　　//p()メソッドを定義
+        return this.name;　　　　　　　　　　　//returnでnameを返す
+        }
+    public int c(){　　　　　　　　　　　　　　//c()メソッドを定義
+        return this.age;　　　　　　　　　　　//returnでageを返す
+    }
+
+}
+
+
+「サーブレット」
+
+Musician masami = new Musician();　　　　//masamiというMusicianを新たに作る
+masami.setHuman("",0);　　　　　　　　　　　//masamiにsetHumanメソッドを与え、初期化
+
+out.println(masami.p() + "<br>");　　　　//masamiのp()メソッド==""を出力
+out.println(masami.c());                //masamiのc()メソッド==0を出力
