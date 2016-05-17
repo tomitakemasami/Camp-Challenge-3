@@ -1,0 +1,30 @@
+//オブジェクト指向１　課題基礎編３
+
+//Javaクラス
+
+public class Human{
+    public String name = "";
+    public Integer age = 0;
+    public void setHuman(String n, Integer a) {
+    this.name = n;
+    this.age = a;
+        }
+    public String showName() {
+    return this.name;
+    }
+    public int showAge() {
+        return this.age;
+    }
+
+}
+
+
+
+//サーブレット
+
+Human tomitake = new Human();
+tomitake.setHuman("真生",29);
+
+out.println(tomitake.showName());
+int a = tomitake.showAge();
+out.println(a);
