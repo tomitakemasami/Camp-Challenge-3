@@ -52,15 +52,6 @@ public class jdbc1 extends HttpServlet {
                     
         } catch (SQLException e) {
             out.println("MySQLに接続できませんでした。");
-            
-            
-            
-//preparedStatement a = con.prepareStstement("create table user(userID int, name varchar(255),age int)");
-            
-            
-            
-            
-            
         
         }finally{
             if(con != null){
